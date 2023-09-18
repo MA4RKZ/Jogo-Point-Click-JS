@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>APP MATA MOSQUITO</title>
+
+	<link rel="stylesheet" href="estilo.css">
+
+	<script src="game.js">
+		
+	</script>
+
+</head>
+
+<body onresize="adjust()">
+
+	<div class="painel">
+	<!-- inicio da div 'hp' -->
+
+    <div class="hp">
+    	      <img id="hp1" src="imagens/coracao_cheio.png">
+    	      <img id="hp2" src="imagens/coracao_cheio.png">    
+    	      <img id="hp3" src="imagens/coracao_cheio.png">  
+
+    </div>
+    <!-- fim da div 'hp' -->
+
+    <!-- inicio da div 'time' -->
+    <div class="time">
+    	Tempo Restante: <span id="cronos"></span>
+
+    </div>
+     <!-- fim da div 'time' -->
+
+	</div>
+
+
+    <script>
+
+    	document.getElementById('cronos').innerHTML = tempo
+
+    	var spawn = setInterval(function () {
+    		randomic()
+    	}, dificuldade)
+    </script>
+
+</body>
+
+</html>
